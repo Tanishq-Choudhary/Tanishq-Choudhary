@@ -18,6 +18,7 @@ Fixes merged into other people's projects:
 | Spring Integration | The PostgreSQL subscribable channel retried a failed message by default; backported to 7.1.x and 7.0.x ([#11566](https://github.com/spring-projects/spring-integration/pull/11566)) |
 | Spring AMQP | Address resolver and connection back-off never reached the publisher connection factory; backported to 4.1.x and 4.0.x ([#3740](https://github.com/spring-projects/spring-amqp/pull/3740)) |
 | node-redis | Binary stream names corrupted by RESP3 `XREAD` ([#3540](https://github.com/redis/node-redis/pull/3540)), `ARINFO FULL` averages returned as strings on RESP2 ([#3550](https://github.com/redis/node-redis/pull/3550)), Buffer attributes mangled by `vSetAttr` ([#3552](https://github.com/redis/node-redis/pull/3552)) |
+| Locust | `PostgresUser` left every query in one uncommitted transaction, so one failed query failed all the later ones and no rows were saved ([#3580](https://github.com/locustio/locust/pull/3580)) |
 | H2 Database | Window functions in `WHERE` or `HAVING` were accepted and returned no rows ([#4487](https://github.com/h2database/h2database/pull/4487)) |
 | Prometheus client_java | Metric-specific properties lost the case of the metric name ([#2588](https://github.com/prometheus/client_java/pull/2588)) |
 
